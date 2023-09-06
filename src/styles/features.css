@@ -1,0 +1,13 @@
+.feature_area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  align-items: center;
+  padding: 50px 0;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .feature_area {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,19 @@
+._loading_overlay_overlay {
+  position: absolute;
+  height: 100vh !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-size: 1.2em;
+  color: #0f15a2;
+  background: rgba(232, 232, 232, 0.7);
+  z-index: 800;
+  -webkit-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+  opacity: 0.8;
+}
