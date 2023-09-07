@@ -1,2 +1,13 @@
-# book-catalog-client
-Book Catalog Client is a Git repository that houses a user-friendly application for managing and organizing your personal book collection, offering an intuitive interface for cataloging and tracking your literary treasures.
+# Book Catalog Client
+
+## Introduction
+
+The Book Catalog Client is the user interface for the Book Catalog Application, providing a seamless way to explore and manage your book collection.
+
+## Live Demo
+
+You can view a live demo of the application here: [Live Demo](https://superb-tarsier-7c3ae2.netlify.app/)
+
+## Overview
+
+The Book Catalog Client is the user interface for the Book Catalog Application. It allows users to browse, search, and interact with the catalog of books. This project is built using technologies like React, Redux, and more.
