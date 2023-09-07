@@ -1,4 +1,4 @@
-import banner from "../assets/banner.png";
+import banner from "../assets/banner.svg";
 import Features from "../layouts/Features";
 import "../styles/banner.css";
 

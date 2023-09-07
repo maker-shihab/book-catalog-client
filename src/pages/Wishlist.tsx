@@ -3,17 +3,17 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
-import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import Cookies from "universal-cookie";
+import DeleteAlert from "../components/DeleteAlert";
+import LoadingOverlay from "../components/LoadingOverlay/LoadingOverlay";
 import {
   useDeleteWishListMutation,
   useGetwishListsQuery,
 } from "../redux/wishList/wishListApi";
-import LoadingOverlay from "../components/LoadingOverlay/LoadingOverlay";
-import { useEffect, useState } from "react";
-import DeleteAlert from "../components/DeleteAlert";
-import Cookies from "universal-cookie";
 const cookies = new Cookies();
 const userId = cookies.get("id");
 
@@ -52,23 +52,22 @@ const Wishlist = () => {
             <h1 className="my-6 text-3xl font-semibold">While List Books</h1>
             <div>
               {wishLists?.map((item, index) => (
-                <div className="w-[60%] flex justify-evenly items-center rounded-md shadow-lg my-4">
+                <div className="flex justify-evenly items-center rounded-md shadow-lg my-4 wishlist">
                   <Link to={`/book-details/${item?.book?._id}`}>
-                    <img
-                      className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                      src="https://i.ibb.co/4K8FGRS/R.jpg"
-                      alt=""
-                    />
+                    <div className="card__thumb">
+                      <img
+                        className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                        src="https://placehold.co/600x400"
+                        alt=""
+                      />
+                    </div>
                   </Link>
                   <Link to={`/book-details/${item?.book?._id}`}>
                     <div className=" p-4 leading-normal">
                       <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                         {item?.book?.title}
                       </h5>
-                      <p className="mb-3 font-normal text-gray-700">
-                        {/* {item?.book?.author?.userName} */}
-                        Mohon
-                      </p>
+                      <p className="mb-3 font-normal text-gray-700">Maker</p>
                     </div>
                   </Link>
 

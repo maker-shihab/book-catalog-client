@@ -1,17 +1,16 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
+import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import defaltImage from "../assets/no-image.jpeg";
+import { toast } from "react-toastify";
+import Cookies from "universal-cookie";
+import DeleteAlert from "../components/DeleteAlert";
+import LoadingOverlay from "../components/LoadingOverlay/LoadingOverlay";
 import {
   useBookReviewMutation,
   useDeleteBookMutation,
   useGetSingleBookQuery,
 } from "../redux/books/bookApi";
-import { useEffect, useState } from "react";
-import { toast } from "react-toastify";
-import LoadingOverlay from "../components/LoadingOverlay/LoadingOverlay";
-import Cookies from "universal-cookie";
-import DeleteAlert from "../components/DeleteAlert";
 const cookies = new Cookies();
 
 const BookDetails = () => {
@@ -63,7 +62,11 @@ const BookDetails = () => {
       <div className="w-[80%] mx-auto my-8">
         <div className="flex items-center ">
           <div className="w-[50%]">
-            <img className="w-[70%]" src={defaltImage} alt="" />
+            <img
+              className="w-[70%]"
+              src="https://placehold.co/600x400"
+              alt="book-cover"
+            />
           </div>
           <div>
             <h1 className="text-5xl font-semibold">{bookDetails?.title}</h1>

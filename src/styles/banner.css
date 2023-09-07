@@ -4,3 +4,13 @@
   grid-gap: 40px;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .banner__content {
+    display: flex;
+    flex-direction: column-reverse;
+    grid-gap: 0;
+  }
+  .banner__text {
+    margin-top: -50px;
+  }
+}

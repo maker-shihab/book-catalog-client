@@ -11,7 +11,30 @@
   padding: 0 20px;
   margin: 0 auto;
 }
-
+.wishlist {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 50px;
+  align-items: center;
+}
+.wishlist .card__thumb img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.header_area {
+  margin-bottom: 50px;
+}
+footer {
+  margin-top: 100px;
+}
+@media (max-width: 767px) {
+  .wishlist {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 20px;
+  }
+}
 @media (max-width: 576px) {
   .container {
     padding: 0 10px;

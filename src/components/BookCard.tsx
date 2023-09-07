@@ -4,11 +4,10 @@
 
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 
-import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
-import cardImage from "../assets/no-image.jpeg";
-import { useCreateWishListMutation } from "../redux/wishList/wishListApi";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import { useCreateWishListMutation } from "../redux/wishList/wishListApi";
 
 const BookCard = ({ book, userId }) => {
   const [createWishList, { isLoading, isError, isSuccess }] =
@@ -31,7 +30,7 @@ const BookCard = ({ book, userId }) => {
         <Link to={`/book-details/${book._id}`} className="h-[150px]">
           <img
             className="rounded-t-lg w-[100%] h-[150px]"
-            src={cardImage}
+            src="https://placehold.co/800x410"
             alt=""
           />
         </Link>

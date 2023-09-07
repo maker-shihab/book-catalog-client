@@ -29,7 +29,7 @@ const Navbar = () => {
     navigate("/");
   };
   return (
-    <div className="">
+    <div className="header_area">
       <nav className="bg-[#fcf5ec] border-gray-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 py-6">
           <Link to="/" className="flex items-center">
@@ -64,7 +64,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         to="/signup"
-                        className="block px-4 py-2 text-sm text-[#333] hover:bg-[#eeeeee57]"
+                        className="block px-4 py-2 text-sm text-[#fff] hover:bg-[#eeeeee57]"
                       >
                         Sign Up
                       </Link>
@@ -72,7 +72,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         to="/login"
-                        className="block px-4 py-2 text-sm text-[#333] hover:bg-[#eeeeee57]"
+                        className="block px-4 py-2 text-sm text-[#fff] hover:bg-[#eeeeee57]"
                       >
                         Login
                       </Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/"
-                      className="block px-4 py-2 text-sm text-[#333] hover:bg-[#eeeeee57]"
+                      className="block px-4 py-2 text-sm text-[#fff] hover:bg-[#eeeeee57]"
                       onClick={logOutHandler}
                     >
                       Log out
@@ -124,7 +124,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/"
-                  className="block py-2 pl-3 pr-4 border-b-2 border-b-[#fcf5ec] md:bg-transparent md:p-0 text-[#5b4eea] md:hover:text-[#5b4eea]  md:focus:text-[#333] md:hover:border-b-[#EEEEEE] md:focus:border-b-[#EEEEEE] text-xl"
+                  className="block py-2 pl-3 pr-4  border-b-[#fcf5ec] md:bg-transparent md:p-0 text-[#5b4eea]]  md:focus:text-[#333] md:hover:border-b-[#EEEEEE] md:focus:border-b-[#EEEEEE] text-xl"
                   aria-current="page"
                 >
                   Home
@@ -133,7 +133,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/books"
-                  className="block py-2 pl-3 pr-4 border-b-2 border-b-[#fcf5ec] md:bg-transparent md:p-0 text-[#333] md:hover:text-[#5b4eea]  md:focus:text-[#333] md:hover:border-b-[#EEEEEE] md:focus:border-b-[#EEEEEE] text-xl"
+                  className="block py-2 pl-3 pr-4  border-b-[#fcf5ec] md:bg-transparent md:p-0 text-[#333]]  md:focus:text-[#333] md:hover:border-b-[#EEEEEE] md:focus:border-b-[#EEEEEE] text-xl"
                 >
                   All Books
                 </Link>
@@ -143,7 +143,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/add-book"
-                      className="block py-2 pl-3 pr-4 border-b-2 border-b-[#5b4eea] md:bg-transparent md:p-0 text-[#333] md:hover:text-[#333]  md:focus:text-[#333] md:hover:border-b-[#EEEEEE] md:focus:border-b-[#EEEEEE] text-xl"
+                      className="block py-2 pl-3 pr-4   md:bg-transparent md:p-0 text-[#333]]  md:focus:text-[#333] text-xl"
                     >
                       Add a New Book
                     </Link>
@@ -151,7 +151,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/wishlist"
-                      className="block py-2 pl-3 pr-4 border-b-2 border-b-[#5b4eea] md:bg-transparent md:p-0 text-[#ffffffb2] md:hover:text-[#333]  md:focus:text-[#333] md:hover:border-b-[#EEEEEE] md:focus:border-b-[#EEEEEE] text-xl"
+                      className="block py-2 pl-3 pr-4  md:bg-transparent md:p-0 text-[#333] md:hover:text-[#333]  md:focus:text-[#333]  text-xl"
                     >
                       Wishlist
                     </Link>
