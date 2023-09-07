@@ -11,3 +11,12 @@ You can view a live demo of the application here: [Live Demo](https://superb-tar
 ## Overview
 
 The Book Catalog Client is the user interface for the Book Catalog Application. It allows users to browse, search, and interact with the catalog of books. This project is built using technologies like React, Redux, and more.
+
+## Key Features
+
+- Browse and search for books
+- View book details
+- Add books to your collection
+- Wishlist: Add books to your wishlist
+- User Management: Create and log in as a user
+- Update Book Information
