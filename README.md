@@ -20,3 +20,14 @@ The Book Catalog Client is the user interface for the Book Catalog Application. 
 - Wishlist: Add books to your wishlist
 - User Management: Create and log in as a user
 - Update Book Information
+
+## Getting Started
+
+To run this project locally, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+
+## API
+
+The client communicates with the Book Catalog Server API. You can find the API documentation and live API here: [Book Catalog Server API](https://book-catalog-server-maker-shihab.vercel.app/)
