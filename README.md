@@ -27,7 +27,17 @@ To run this project locally, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
+3. Install dependencies using `npm install` or `yarn install`.
+4. Start the development server using `npm run dev` or `yarn dev`.
 
 ## API
 
 The client communicates with the Book Catalog Server API. You can find the API documentation and live API here: [Book Catalog Server API](https://book-catalog-server-maker-shihab.vercel.app/)
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow our [contribution guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
